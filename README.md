@@ -1,26 +1,30 @@
 # Personal Startpage
 
-Een snelle, persoonlijke startpagina voor Firefox. Volledig statisch: geen database of backend nodig.
+Een zeer uitgebreide persoonlijke Firefox-startpagina met meerdere losse pagina's.
 
-## Functies
-- Live klok en datum
-- Internet zoeken met Google, Bing of DuckDuckGo
-- Live weer via Open-Meteo + browserlocatie
-- Agenda
+## Pagina's
+- Overzicht met live klok, datum, zoeken, weer en widgets
+- Agenda met maandkalender
 - Taken
 - Huiswerk
-- Doelen met voortgang
-- Notities met automatische lokale opslag
+- Doelen
+- Notities
 - Snelle links
-- Donker/licht thema
-- Mobiel responsive
-- Scrollbare sidebar en hoofdcontent
-- Gegevens blijven lokaal in de browser via localStorage
+- Gewoontes
+- Focus
+- Statistieken
+- Widgets
+- Instellingen
+
+De gegevens worden lokaal in de browser opgeslagen. Er is geen eigen database of backend nodig.
 
 ## GitHub Pages
-Zet GitHub Pages aan via **Settings → Pages → Deploy from a branch → main → /(root)**.
+Deze repository bevat een GitHub Actions workflow voor GitHub Pages. GitHub Pages ondersteunt statische HTML, CSS en JavaScript en kan meerdere pagina's uit dezelfde publicatiebron publiceren. 
 
-De website is daarna rechtstreeks als Firefox-homepage te gebruiken.
+Ga naar Settings > Pages en controleer dat GitHub Actions als bron is ingesteld.
 
 ## Privacy
-Agenda, taken, huiswerk, doelen, links en notities worden alleen in de lokale browseropslag bewaard. Weergegevens worden opgehaald bij Open-Meteo nadat je browser toestemming geeft voor locatie.
+Agenda, taken, huiswerk, doelen, notities, links en gewoontes worden lokaal in localStorage bewaard. Het weer wordt via Open-Meteo opgehaald nadat de browser locatie toestemming geeft.
+
+## Back-up
+De instellingenpagina bevat een exportfunctie zodat je je lokale dashboardgegevens als JSON kunt bewaren.
